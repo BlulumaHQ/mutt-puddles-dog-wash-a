@@ -31,7 +31,7 @@ const Footer = () => (
     <div className="border-t-[3px] border-ink">
       <p className="section-container py-4 text-sm font-bold text-center">
         © {new Date().getFullYear()} Mutt Puddles Dog Wash LLC. Website by{" "}
-        <a href="https://bluluma.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Bluluma Design</a>
+        <a href="https://swiftsite.ca" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">SwiftSite</a>
       </p>
     </div>
   </footer>
