@@ -17,13 +17,13 @@ const ServicePage = ({ title, metaTitle, content, ctaText, ctaLink }: {
               <p key={i} className="prose-body text-muted-foreground mb-4">{p}</p>
             ))}
             {ctaText && ctaLink && (
-              <Link to={ctaLink} className="inline-flex items-center px-6 py-3 rounded-button bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all mt-4">
+              <Link to={ctaLink} className="btn-sticker bg-pink text-ink shadow-[4px_4px_0_hsl(var(--ink))] mt-4">
                 {ctaText}
               </Link>
             )}
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 0.1 }}>
-            <img src="/images/Pet-Groomer-1080x720.jpg" alt={title} className="w-full rounded-card object-cover" style={{ outline: "1px solid rgba(0,0,0,0.1)", outlineOffset: "-1px" }} />
+            <img src="/images/Pet-Groomer-1080x720.jpg" alt={title} className="w-full rounded-[40px] border-4 border-ink object-cover rotate-1 shadow-blue" />
           </motion.div>
         </div>
       </div>

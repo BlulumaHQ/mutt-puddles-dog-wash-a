@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        sans: ['Nunito', 'system-ui', 'sans-serif'],
+        display: ['Fredoka', 'Nunito', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -50,6 +51,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sky: "hsl(var(--sky))",
+        ink: "hsl(var(--ink))",
+        midblue: "hsl(var(--midblue))",
+        bubble: "hsl(var(--bubble))",
+        pink: { DEFAULT: "hsl(var(--pink))", tint: "hsl(var(--pink-tint))" },
+        sunny: { DEFAULT: "hsl(var(--sunny))", tint: "hsl(var(--sunny-tint))" },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,8 +72,8 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-        card: "24px",
-        button: "16px",
+        card: "32px",
+        button: "9999px",
       },
       keyframes: {
         "accordion-down": {
@@ -77,8 +84,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        float: { "0%,100%": { transform: "translateY(0)" }, "50%": { transform: "translateY(-14px)" } },
       },
       animation: {
+        float: "float 5s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

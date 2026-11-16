@@ -26,44 +26,44 @@ const ContactForm = () => {
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-medium text-foreground mb-1.5">Name</label>
+          <label className="block text-sm font-extrabold text-foreground mb-1.5">Name</label>
           <input
             type="text"
             name="name"
             required
-            className="w-full px-4 py-3 rounded-button border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+            className="w-full px-4 py-3 bubble-input"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
+          <label className="block text-sm font-extrabold text-foreground mb-1.5">Email</label>
           <input
             type="email"
             name="email"
             required
-            className="w-full px-4 py-3 rounded-button border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+            className="w-full px-4 py-3 bubble-input"
           />
         </div>
       </div>
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1.5">Phone</label>
+        <label className="block text-sm font-extrabold text-foreground mb-1.5">Phone</label>
         <input
           type="tel"
           name="phone"
-          className="w-full px-4 py-3 rounded-button border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+          className="w-full px-4 py-3 bubble-input"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1.5">Message</label>
+        <label className="block text-sm font-extrabold text-foreground mb-1.5">Message</label>
         <textarea
           name="message"
           rows={5}
           required
-          className="w-full px-4 py-3 rounded-button border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none"
+          className="w-full px-4 py-3 bubble-input resize-none"
         />
       </div>
       <button
         type="submit"
-        className="px-8 py-3 rounded-button bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all"
+        className="btn-sticker bg-primary text-primary-foreground shadow-[4px_4px_0_hsl(var(--bubble))]"
       >
         Send
       </button>
